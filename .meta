@@ -1,5 +1,6 @@
 {
   "projects": {
-    "flag-api": "git@github.com:daaasbu/flag-api.git"
+    "flag-api": "git@github.com:daaasbu/flag-api.git",
+    "flag-admin": "git@github.com:daaasbu/flag-admin.git"
   }
 }

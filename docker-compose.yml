@@ -25,3 +25,14 @@ services:
       - ./flag-api:/app
       - /app/node_modules
       - /app/prisma
+  admin:
+    links:
+      - api
+    depends_on:
+      - api
+    container_name: admin
+    ports:
+      - '3000:3000'
+    build:
+      context: flag-admin
+      dockerfile: Dockerfile

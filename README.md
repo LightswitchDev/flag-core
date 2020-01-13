@@ -19,3 +19,8 @@ meta git pull
 `psql - U postgres -h localhost`  
 **password:** mypassword  
 **connection string:** postgresql://postgres:mypassword@localhost?sslmode=prefer 
+
+
+### GraphQL
+**Introspection server:** localhost:4000
+**Next UI:** localhost:3000
