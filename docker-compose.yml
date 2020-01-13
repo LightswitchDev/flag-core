@@ -21,10 +21,6 @@ services:
     build:
       context: flag-api
       dockerfile: Dockerfile
-    volumes:
-      - ./flag-api:/app
-      - /app/node_modules
-      - /app/prisma
   admin:
     links:
       - api
