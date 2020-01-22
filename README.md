@@ -45,6 +45,14 @@ This will:
 
 ## Run individual projects
 
+### Secrets
+
+Set a .env in ./flag-admin to be:
+
+```
+POSTGRESQL_URL=postgresql://postgres:mypassword@localhost/lightswitch?sslmode=prefer
+```
+
 Most of these commands are just pass throughs to their respective projects.
 
 `npm run db`  
