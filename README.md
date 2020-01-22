@@ -10,6 +10,7 @@
 
 ### prisma
 
+https://github.com/prisma/prisma2  
 `sudo npm i -g --unsafe-perm prisma2`
 
 ## Setup repos
