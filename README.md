@@ -6,7 +6,7 @@
 
 `npm i -g meta`
 
-**repos file**: [meta repos](./meta)
+**repos file**: [meta repos](./.meta)
 
 ### prisma
 
