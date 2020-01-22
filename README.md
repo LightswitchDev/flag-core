@@ -68,7 +68,7 @@ This could use a little work still, don't have HMR working yet. So will require 
 
 `npm run db`  
 or  
-`sudo docker-compose up`
+`sudo docker-compose up db`
 
 ### Migrate and Seed
 
