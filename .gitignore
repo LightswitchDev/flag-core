@@ -1,3 +1,5 @@
 /flag-api/
 postgres-data
 /flag-admin/
+/flag-client/
+node_modules

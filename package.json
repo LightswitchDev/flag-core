@@ -1,0 +1,32 @@
+{
+  "name": "flag-core",
+  "version": "1.0.0",
+  "description": "## Dependencies",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build:client": "npm --prefix flag-client run build",
+    "install": "npm --prefix flag-client i && npm --prefix flag-admin i && npm --prefix flag-api i && npm --prefix flag-client/example i",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "generate": "npm --prefix flag-api run generate",
+    "seed": "npm --prefix flag-api run seed",
+    "start:fresh": " npm run db & (npm run install && npm run build:client && npm run generate && npm run seed && (npm run api & npm run admin & npm run example))",
+    "start": "npm run db & npm run api & npm run admin & npm run example",
+    "kill": "killall node",
+    "example": "npm --prefix flag-client/example start",
+    "api": "npm --prefix flag-api run dev",
+    "admin": "npm --prefix flag-admin run dev",
+    "db": "sudo docker-compose up db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daaasbu/flag-core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daaasbu/flag-core/issues"
+  },
+  "homepage": "https://github.com/daaasbu/flag-core#readme"
+}
