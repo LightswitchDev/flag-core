@@ -21,6 +21,8 @@ services:
     build:
       context: flag-api
       dockerfile: Dockerfile
+    environment:
+      POSTGRESQL_URL: postgresql://postgres:L7xVQ2uyB6yvgUtwrQXpUBYRpcR7CgwCVRx4GqMj6dK8bMGYDPqjXxsLFWhfLMqY@35.223.126.49/lightswitch?sslmode=prefer
   admin:
     links:
       - api

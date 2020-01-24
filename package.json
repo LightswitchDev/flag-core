@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
+    "build:admin": "gcloud builds submit --tag gcr.io/pristine-flames-265923/flag-api",
     "build:client": "npm --prefix flag-client run build",
     "install": "npm --prefix flag-client i && npm --prefix flag-admin i && npm --prefix flag-api i && npm --prefix flag-client/example i",
     "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
